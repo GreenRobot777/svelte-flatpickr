@@ -21,9 +21,5 @@
   },
   "peerDependencies": {
     "svelte": "^3.0.0"
-  },
-  "files": [
-    "dist",
-    "src"
-  ]
+  }
 }
