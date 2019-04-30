@@ -3,7 +3,6 @@
 <script>
 	/** @format */
 	import { onMount, createEventDispatcher } from 'svelte';
-	import flatpickr from 'flatpickr';
 
 	const hooks = new Set([
 		'onChange',
@@ -26,7 +25,8 @@
 
 	$: if (fp) fp.setDate(value);
 
-	onMount(() => {
+	onMount(async () => {
+		const flatpickr = await import('flatpickr').then(f => f.default);
 		fp = flatpickr(input, addHooks(options));
 
 		return () => {
