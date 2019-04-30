@@ -2,9 +2,9 @@
   "name": "svelte-flatpickr",
   "version": "2.0.0",
   "description": "Flatpickr component for Svelte",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.js",
   "svelte": "src/Flatpickr.svelte",
+  "module": "dist/index.js",
+  "main": "dist/index.cjs.js",
   "repository": "https://github.com/jacobmischka/svelte-flatpickr.git",
   "author": "Jacob Mischka <jacob@mischka.me>",
   "license": "MIT",
@@ -21,5 +21,10 @@
   },
   "peerDependencies": {
     "svelte": "^3.0.0"
-  }
+  },
+  "files": [
+    "src/Flatpickr.svelte",
+    "dist/index.cjs.js",
+    "dist/index.js"
+  ]
 }
